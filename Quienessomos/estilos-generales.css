@@ -1,0 +1,163 @@
+.header { grid-area: header; }
+.barra-menu {grid-area: menu1;}
+.derecha {grid-area: der;
+    padding:0px 15px;
+    background-color:burlywood}
+.centro {
+    grid-area: centro;
+    padding:0px 15px;
+    background-color: antiquewhite;
+    text-align: center;}
+
+.izquierdo {grid-area: izq;
+    padding:0px 15px;
+    background-color:darkgray}
+
+.mi-footer {grid-area: pie;}
+
+
+/*--------------------------------------------------*/
+/* Defino estilos del contenedor para pantalla grande
+/*--------------------------------------------------*/
+.container {
+    display: grid;
+    grid-template: auto auto auto auto / 20% auto 20%;
+    grid-template-areas: "header header header"
+                          "menu1 menu1 menu1"
+                          "izq   centro der"
+                          "pie pie pie";
+
+}
+
+/*--------------------------------------------------*/
+/* Defino estilos del contenedor para tablet
+/*--------------------------------------------------*/
+@media (max-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template: auto auto auto auto auto / 20% auto;
+        grid-template-areas: "header header"
+                              "menu1 menu1"
+                              "der der"
+                              "izq centro"
+                              "pie pie";
+    
+    }
+}
+
+/*--------------------------------------------------*/
+/* Defino estilos del contenedor para telefono
+/*--------------------------------------------------*/
+@media (max-width: 620px) {
+    .container {
+        display: grid;
+        grid-template: auto auto auto auto auto auto/ auto;
+        grid-template-areas: "header"
+                              "menu1"
+                              "der"
+                              "centro"
+                              "izq"
+                              "pie";
+    
+    }
+
+
+nav ul li a {
+    color: wheat;
+    display: block;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+}
+
+
+#foto {
+    width: 50%;
+    height: auto;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+/*--------------------------------------------------*/
+/* Menu
+/*--------------------------------------------------*/
+nav {
+    background-color: #273788;
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    
+}
+
+nav ul li a {
+    color: wheat;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #AABBFF;
+    color:black;
+    border-radius: 10px;
+    transform: scale(1.1);
+    border: 2px solid red;
+}
+
+/*--------------------------------------------------*/
+/* Estilos del footer
+/*--------------------------------------------------*/
+.mi-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #273788;
+    border: 1px solid red;
+    padding: 0px 20px;
+}
+
+
+.icon-footer {
+    display: flex;  
+    margin: 0px;
+    color:white;
+    font-size: 24px;
+    column-gap: 10px;
+}
+
+.texto-footer {
+    margin: 0px;
+    color:white
+}
+
+/*--------------------------------------------------*/
+/* Estilos del header
+/*--------------------------------------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #273788;
+    border: 1px solid red;
+    padding: 0px 20px;    
+}
+
+.logo > img {
+    width: 100px;
+}
+
+.nombre {
+    width: 100%;
+    text-align: center;
+}
