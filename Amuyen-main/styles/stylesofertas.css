@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
+/*------------Template areas----------*/
 .header {
   grid-area: header;
 }
@@ -31,9 +32,12 @@
 .my-footer {
   grid-area: my-footer;
 }
+
 .contenedor {
   background-color: rgb(236, 221, 221);
 }
+
+/*------------Contenedor-----------*/
 
 .contenedor {
   display: grid;
@@ -47,6 +51,8 @@
     "promo-dni promo-dni"
     "my-footer my-footer";
 }
+
+/*-----------Media queries---------*/
 
 @media (max-width: 1024px) {
   .contenedor {
@@ -62,6 +68,10 @@
       "my-footer my-footer";
   }
 
+  nav ul li a {
+    font-size: 14px;   
+  }
+
   .promo h2 {
     font-size: 40px;
   }
@@ -70,6 +80,7 @@
   .combo h3 {
     font-size: 40px;
   }
+
   .fotis1 #im1,
   .fotis1 #im3 {
     float: none;
@@ -77,6 +88,7 @@
     margin-left: 60px;
     margin-top: 5px;
   }
+
   .fotis2 #im2 {
     float: none;
     text-align: center;
@@ -85,13 +97,14 @@
     padding-bottom: 15px;
     margin-top: 0px;
   }
+
   .fotis1,
   .fotis2 {
     padding: 10px;
   }
 }
 
-@media screen and (max-width: 720px) {
+@media (max-width: 720px) {
   .contenedor {
     display: grid;
     grid-template: auto auto auto auto auto auto auto / auto;
@@ -106,21 +119,23 @@
       "my-footer";
   }
 
-  /* .menu1 .menu {
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: start;
-    column-gap: 0px;
-  } */
+  nav ul li a {
+    font-size: 10px;    
+  }
+  
 
   .combo h3 {
     font-size: 20px;
   }
+
   .combo h1 {
     font-size: 40px;
   }
+
   .promo {
     justify-content: center;
   }
+
   .promo h2 {
     font-size: 30px;
     justify-content: center;
@@ -132,26 +147,32 @@
     font-size: 80px;
     justify-content: center;
   }
+
   .fotis1,
   .fotis2 {
     padding: 10px;
   }
+
   .combo h1,
   .combo h3 {
     justify-content: center;
     padding-top: 50px;
   }
+
   .promo-dni .promodni {
     display: block;
     padding: 10px;
   }
+
   .promo-dni .promodni p {
     font-size: 20px;
   }
+
   .promo-dni .promodni #icono {
     width: 100px;
     margin: 10px;
   }
+
   .promo-dni .promodni #icono-mp {
     width: 150px;
     margin: 10px;
@@ -175,6 +196,8 @@
   flex-wrap: wrap;
 }
 
+/*------------Header-----------*/
+
 header {
   background-color: #d8843e;
 }
@@ -191,10 +214,7 @@ header {
   border-radius: 50%;
 }
 
-h1 {
-  padding-top: 10px;
-  font-family: "Montserrat", sans-serif;
-}
+/*--------------Nav-------------------*/
 
 nav {
   background-color: antiquewhite;
@@ -218,7 +238,7 @@ nav ul li a {
   padding-right: 15px;
   padding-left: 15px;
   text-decoration: none;
-  color:rgb(98, 97, 97);
+  color: rgb(98, 97, 97);
   font-family: "Montserrat", sans-serif;
   margin-right: 10px;
 }
@@ -228,6 +248,8 @@ nav ul li a:hover {
   text-decoration-thickness: 2px;
 }
 
+/*--------------Main--------------*/
+
 main {
   background-color: rgb(236, 221, 221);
 }
@@ -235,27 +257,12 @@ main {
 .menu {
   list-style: none;
   display: flex;
-  /* grid-template-columns: repeat(5, 1fr); */
-  padding-bottom: 15px;
+  padding: 15px;
   margin: 0;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
-
-/* .menu li {
-  margin: 0;
-} */
-
-.menu a {
-  margin-left: 15px;
-  margin-right: 15px;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  /* color: black; */
-  color: rgb(98, 97, 97);
-  transition: background-color 0.3s;
-}
-
 
 .promo {
   height: 200px;
@@ -264,19 +271,8 @@ main {
   background-color: #b68a75;
   font-family: "Montserrat", sans-serif;
   text-align: center;
-
   text-decoration: double;
-  /* border: 10px dashed rgb(255, 254, 254); */
-
-  /* box-shadow: 0 0 0 10px #b68a75;
-    animation: 2s borderAnimado infinite;    */
 }
-/* @keyframes borderAnimado{
-    to{
-        border-color: #b68a75;
-        box-shadow: 0 0 0 10px whitesmoke;
-    }
-} */
 
 #octubre {
   text-shadow: white 5px 5px;
@@ -332,16 +328,17 @@ main {
 }
 
 .fotis1,
-.fotis2 {
-  /* display: flex; */
+.fotis2 {  
   padding-top: 30px;
   width: auto;
   border-color: rgb(216, 213, 213);
   border-style: ridge;
 }
+
 .fotis1 {
   padding-left: 20px;
 }
+
 .fotis2 {
   padding-right: 20px;
 }
@@ -402,9 +399,11 @@ main {
   background-color: #b68a75;
   border: 5px ridge rgb(216, 213, 213);
 }
+
 .promodni p {
   font-size: 30px;
 }
+
 #icono {
   width: 150px;
   height: auto;
@@ -422,6 +421,8 @@ main {
   justify-content: center;
   margin-top: 20px;
 }
+
+/*---------------Footer------------------*/
 
 footer {
   color: white;
