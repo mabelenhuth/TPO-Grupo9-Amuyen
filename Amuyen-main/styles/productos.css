@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------------- TEMPLATE AREAS --------------------------*/
+
+.temp-header {
+  grid-area: header;
+}
+.temp-nav {
+  grid-area: nav;
+}
+.temp-main {
+  grid-area: main;
+}
+.temp-footer {
+  grid-area: footer;
+}
+
+.general-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "main main main"
+      "footer footer footer";
+  }
+  
+  .d-header {
+    display: flex;
+    justify-content: center;
+    background-color: #d8843e;
+  }
+  
+  .logo {
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  nav {
+    background-color: #d8843e;
+    text-align: center;
+  }
+  
+  .ul-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+    background-color: #d8843e;
+  }
+  
+  nav ul li a {
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-right: 10px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .contact-container-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .container,
+    .container3 {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .contact-container {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      gap: 30px;
+      margin-right: 30px;
+    }
+  
+    .container3 {
+      margin-left: 30px;
+      max-height: 380px;
+    }
+  }
+
+/*-------------------------------- MAIN -------------------------------*/
+main {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 30px 20px 20px;
+    width: 250px;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+    animation: fadeIn 1s;
+}
+
+.product:hover {
+    transform: scale(1.02);
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.product-image img:hover {
+    transform: scale(1.1);
+}
+
+.product-details h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.product-details {
+    text-align: center;
+    font-style: bold;
+}
+
+.btn-more {
+    display: inline-block;
+    background-color: white;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-more:hover {
+    background-color: green;
+    color: white;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+/*-------------------------------- FOOTER -------------------------------*/
+
+footer {
+    color: white;
+    background-color: rgb(216, 132, 62);
+    opacity: 100%;
+    height: 250px;
+    /* padding: 15px; */
+  }
+  
+  .navegacion {
+    list-style-type: none;
+  }
+  
+  .navegacion a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+  }
+  
+  h4 {
+    margin-bottom: 15px;
+  }
+  
+  .elementos-footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 20px;
+    color: white;
+  }
+  
+  .elementos-footer p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+  }
+  
+  .info-footer {
+    text-align: center;
+  }
+  
+  .redes {
+    display: flex;
+    /* margin-top: 5px; */
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .menu {
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu {
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: start;
+    }
+  
+    .menu li:nth-child(1),
+    .menu li:nth-child(4) {
+      margin-left: 20px;
+    }
+  
+    .menu li:nth-child(3),
+    .menu li:nth-child(6) {
+      margin-right: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .menu {
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      grid-row-gap: 0;
+    }
+  }  
