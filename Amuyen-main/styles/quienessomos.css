@@ -94,82 +94,109 @@ nav ul li a:hover {
   text-decoration-line: underline;
   text-decoration-thickness: 2px;
 }
-/*------------------------- ARTÍCULOS -----------------------------*/
+/*------------------------- DIVS Y ARTÍCULOS -----------------------------*/
 
+.discurso-central{
+  font-family: 'Montserrat', sans-serif;
+  font-size: large;
+  background-color:  rgb(162, 185, 101) ;
+  text-align: justify;
+  width: auto;
+  padding-top: 50px;
+}
+
+.titulo { 
+  background-color: rgb(162, 185, 101);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  color: antiquewhite;
+  text-align: center;
+  width: auto;
+  position: relative;
+  display: inline;
+  padding-top: 150px;
+}
 .articulo1 {
   background-color: rgb(162, 185, 101);
   font-family: 'Montserrat', sans-serif;
   font-size: large;
   color:antiquewhite;
-  text-align: center;
   text-align: justify;
-  padding-top: 20px;
-  padding-right: 40px;
-  padding-bottom: 20px;
-  padding-left: 40px;
+  width: auto;
+  display: inline-flex;
+  margin-left: 250px;
+  margin-right: 50px;
 }
 
-.articulo11 {
-  background-color: rgb(162, 185, 101);
-  font-family: 'Montserrat', sans-serif;
-  color:antiquewhite;
-  text-align: center;
-  text-align: justify;
-  padding-bottom: 30px;
-}
+
 .articulo2 { 
   background-color: rgb(162, 185, 101);
   font-family: 'Montserrat', sans-serif;
   color:antiquewhite;
-  text-align: center;
   text-align: justify;
-  padding-top: 20px;
-  padding-right: 40px;
-  padding-bottom: 20px;
-  padding-left: 40px;
+  width: auto;
+  display: inline-flex;
+  margin-right: 250px;
+  margin-left: 250px;
+  margin-top: 50px;
 }
 
-.articulo22 {
-  background-color: rgb(162, 185, 101);
-  font-family: 'Montserrat', sans-serif;
-  font-size: large;
-  color:antiquewhite;
-  text-align: center;
-  text-align: justify;
-  padding-top: 30px;
-}
 .articulo3 {
   background-color: rgb(162, 185, 101);
   font-family: 'Montserrat', sans-serif;
+  font-size: large;
   color:antiquewhite;
-  text-align: center;
   text-align: justify;
-  padding-top: 20px;
-  padding-right: 40px;
-  padding-bottom: 20px;
-  padding-left: 40px;
+  width: auto;
+  display: inline-flex;
+  margin-left: 250px;
+  margin-right: 200px;
+  margin-bottom: 200px;
+  padding-top: 80px;
+}
+
+.articulo11 {
+  text-align: justify;
+  padding: auto;
+  line-height: 40px;
+  margin-top: 80px;
+  margin-right: 100px;
+  padding-top: 50px;
+  padding-bottom: none;
 }
 
 .articulo33 {
-  background-color: rgb(162, 185, 101);
-  font-family: 'Montserrat', sans-serif;
-  font-size: large;
-  color:antiquewhite;
-  text-align: center;
   text-align: justify;
-  padding-bottom: 30px;
-  }
+  padding-top: 50px;
+  line-height: 40px;
+  margin-right: 100px;
 
-  .jere, .fer , .guada {
-    display: flex;
-    width: 300px;
-    border:rgb(98, 97, 97);
-    border-radius: 30%;
-    border-style: ridge;
-    height: auto;
-    position: relative;
-    text-align: center;
-  }
+}
+.articulo22 {
+  text-align: justify;
+  padding: auto;
+  line-height: 40px;
+  margin-top: 60px;
+  margin-left: 100px ;
+}
+.jere {
+  margin-right: 150px;
+  margin-top: 80px;
+  margin-left: none;
+}
+
+.fer {
+  margin-right: 120px;
+  margin-top: 120px;
+  padding-top: 200px;
+  margin-left: none;
+  margin-bottom: 80px;
+}
+.guada {
+  margin-left: 300px;
+  margin-top: 800px;
+  margin-right: 150px;
+}
 /*------------------------- FOOTER -----------------------------*/
 
 footer {

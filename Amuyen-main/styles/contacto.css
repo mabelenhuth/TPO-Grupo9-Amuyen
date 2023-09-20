@@ -34,10 +34,6 @@ body {
     "footer footer footer";
 }
 
-header {
-  background-color: #d8843e;
-}
-
 .d-header {
   display: flex;
   justify-content: center;
@@ -45,14 +41,12 @@ header {
 }
 
 .logo {
-  width: 130px;
+  width: 200px;
   border-radius: 50%;
 }
 
-/*------------------------- NAV -----------------------------*/
-
 nav {
-  background-color: antiquewhite;
+  background-color: #d8843e;
   text-align: center;
 }
 
@@ -60,20 +54,17 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
   list-style-type: none;
-  border-style: solid;
-  border-top: rgb(98, 97, 97);
-  border-top-width: 20px;
-  border-bottom: rgb(98, 97, 97);
-  border-bottom-width: 20px;
+  background-color: #d8843e;
 }
 
 nav ul li a {
   padding-right: 15px;
   padding-left: 15px;
   text-decoration: none;
-  color:rgb(98, 97, 97);
+  color: white;
   font-family: "Montserrat", sans-serif;
   margin-right: 10px;
 }
