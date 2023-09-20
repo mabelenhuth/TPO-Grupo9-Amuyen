@@ -248,7 +248,7 @@ input {
     display: grid;
     grid-template-columns: 30% 70%;
     gap: 30px;
-    margin-right: 30px;
+    margin-right: 10px;
   }
 
   .container3 {
