@@ -270,6 +270,10 @@ h4 {
 .contact-container .container3 p {
   display: flex;
   align-items: center;
-  margin-top: -20px; /* Ajusta el valor según tus preferencias */
+  margin-top: -20px; 
+}
+
+label[for="mensaje"] i {
+  font-size: 12px;
 }
 
