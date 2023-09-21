@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
+/*---------------Template areas-------------*/
+
 .header {
   grid-area: header;
 }
@@ -31,9 +33,12 @@
 .my-footer {
   grid-area: my-footer;
 }
+
 .contenedor {
   background-color: rgb(236, 221, 221);
 }
+
+/*---------------Contenedor-------------*/
 
 .contenedor {
   display: grid;
@@ -48,7 +53,10 @@
     "my-footer my-footer";
 }
 
-@media (max-width: 1024px) {
+/*--------------Media Queries------------*/
+
+@media (max-width: 1250px) {
+
   .contenedor {
     display: grid;
     grid-template: auto auto auto auto auto auto auto/ auto auto;
@@ -62,14 +70,20 @@
       "my-footer my-footer";
   }
 
+  .menu li a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
   .promo h2 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .combo h1,
   .combo h3 {
     font-size: 40px;
   }
+
   .fotis1 #im1,
   .fotis1 #im3 {
     float: none;
@@ -77,6 +91,7 @@
     margin-left: 60px;
     margin-top: 5px;
   }
+
   .fotis2 #im2 {
     float: none;
     text-align: center;
@@ -85,13 +100,19 @@
     padding-bottom: 15px;
     margin-top: 0px;
   }
+
   .fotis1,
   .fotis2 {
     padding: 10px;
   }
+
+  .my-footer {
+    font-size: 14px;
+  }
+
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 885px) {
   .contenedor {
     display: grid;
     grid-template: auto auto auto auto auto auto auto / auto;
@@ -106,21 +127,23 @@
       "my-footer";
   }
 
-  /* .menu1 .menu {
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: start;
-    column-gap: 0px;
-  } */
+  .menu li a {
+    padding: 2px;
+    font-size: 10px;
+  }
 
   .combo h3 {
     font-size: 20px;
   }
+
   .combo h1 {
     font-size: 40px;
   }
+
   .promo {
     justify-content: center;
   }
+
   .promo h2 {
     font-size: 30px;
     justify-content: center;
@@ -132,26 +155,32 @@
     font-size: 80px;
     justify-content: center;
   }
+
   .fotis1,
   .fotis2 {
     padding: 10px;
   }
+
   .combo h1,
   .combo h3 {
     justify-content: center;
     padding-top: 50px;
   }
+
   .promo-dni .promodni {
     display: block;
     padding: 10px;
   }
+
   .promo-dni .promodni p {
     font-size: 20px;
   }
+
   .promo-dni .promodni #icono {
     width: 100px;
     margin: 10px;
   }
+
   .promo-dni .promodni #icono-mp {
     width: 150px;
     margin: 10px;
@@ -160,6 +189,8 @@
   .my-footer {
     font-size: 12px;
   }
+
+
 }
 
 * {
@@ -167,6 +198,8 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+
+/*---------------Header----------------*/
 
 #inicio {
   justify-content: center;
@@ -186,47 +219,36 @@ header {
   border-radius: 50%;
 }
 
-h1 {
-  padding-top: 15px;
-  font-family: "Montserrat", sans-serif;
-}
+/*-----------------Nav----------------*/
 
 nav {
-  background-color: rgb(216, 132, 62);
-}
-
-main {
-  background-color: rgb(236, 221, 221);
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  /* grid-template-columns: repeat(5, 1fr); */
-  padding-bottom: 15px;
-  margin: 0;
-  justify-content: center;
+  background-color: #d8843e;
   text-align: center;
 }
 
-/* .menu li {
-  margin: 0;
-} */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  list-style-type: none;
+}
 
 .menu a {
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  /* color: black; */
   color: white;
-  transition: background-color 0.3s;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 10px;
 }
 
 .menu a:hover {
   text-decoration-line: underline;
   text-decoration-thickness: 2px;
 }
+
+/*----------------Main----------------*/
 
 .promo {
   height: 200px;
@@ -237,17 +259,8 @@ main {
   text-align: center;
 
   text-decoration: double;
-  /* border: 10px dashed rgb(255, 254, 254); */
 
-  /* box-shadow: 0 0 0 10px #b68a75;
-    animation: 2s borderAnimado infinite;    */
 }
-/* @keyframes borderAnimado{
-    to{
-        border-color: #b68a75;
-        box-shadow: 0 0 0 10px whitesmoke;
-    }
-} */
 
 #octubre {
   text-shadow: white 5px 5px;
@@ -304,21 +317,24 @@ main {
 
 .fotis1,
 .fotis2 {
-  /* display: flex; */
   padding-top: 30px;
   width: auto;
   border-color: rgb(216, 213, 213);
   border-style: ridge;
+  text-align: center;
 }
+
 .fotis1 {
   padding-left: 20px;
 }
+
 .fotis2 {
   padding-right: 20px;
 }
 
 #texto {
   text-align: center;
+  font-size: 3.5em;
 }
 
 .fotis1 img,
@@ -366,6 +382,14 @@ main {
   margin-left: 10px;
 }
 
+#texto h2 {
+  font-size: 3.5em;
+}
+
+#texto h3 {
+  font-size: 1.5em;
+}
+
 .promodni {
   display: flex;
   text-align: center;
@@ -373,9 +397,11 @@ main {
   background-color: #b68a75;
   border: 5px ridge rgb(216, 213, 213);
 }
+
 .promodni p {
   font-size: 30px;
 }
+
 #icono {
   width: 150px;
   height: auto;
@@ -394,6 +420,8 @@ main {
   margin-top: 20px;
 }
 
+/*-----------------Footer---------------*/
+
 footer {
   color: white;
   background-color: rgb(216, 132, 62);
@@ -405,6 +433,7 @@ footer {
 .elementos-footer {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   font-family: "Montserrat", sans-serif;
   padding-top: 30px;
   color: white;
