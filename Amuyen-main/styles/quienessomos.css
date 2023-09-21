@@ -57,14 +57,14 @@ header {
 }
 
 .logo {
-  width: 130px;
+  width: 200px;
   border-radius: 50%;
 }
 
 /*------------------------- NAV -----------------------------*/
 
 nav {
-  background-color: antiquewhite;
+  background-color: #d8843e;
   text-align: center;
 }
 
@@ -74,18 +74,13 @@ nav {
   align-items: center;
   padding: 15px;
   list-style-type: none;
-  border-style: solid;
-  border-top: rgb(98, 97, 97);
-  border-top-width: 20px;
-  border-bottom: rgb(98, 97, 97);
-  border-bottom-width: 20px;
 }
 
 nav ul li a {
   padding-right: 15px;
   padding-left: 15px;
   text-decoration: none;
-  color:rgb(98, 97, 97);
+  color: white;
   font-family: "Montserrat", sans-serif;
   margin-right: 10px;
 }
@@ -94,30 +89,50 @@ nav ul li a:hover {
   text-decoration-line: underline;
   text-decoration-thickness: 2px;
 }
+
+body {
+  height: 500px;
+  background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fbodytech.com.co%2Fblog%2Fnutricion%2Ffrutos-secos-tu-mejor-opcion-914%2F&psig=AOvVaw1HblbV1DebllyJXpAOtCWS&ust=1695409218879000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCID-1dSxvIEDFQAAAAAdAAAAABAc);
+  background-repeat:no-repeat;
+  background-position-x:center;
+  background-position-y:center;
+  background-size: 10rem;
+  z-index: 50;
+}
+
 /*------------------------- DIVS Y ARTÍCULOS -----------------------------*/
+
+.temp-main {
+  background-image: url("https://images.unsplash.com/photo-1616252576862-bd9abd7467f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0);
+}
 
 .discurso-central{
   font-family: 'Montserrat', sans-serif;
   font-size: large;
-  background-color:  rgb(162, 185, 101) ;
   text-align: justify;
   width: auto;
   padding-top: 50px;
-}
+  }
 
-.titulo { 
-  background-color: rgb(162, 185, 101);
+.titulo {
   font-family: 'Montserrat', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   color: antiquewhite;
   text-align: center;
-  width: auto;
-  position: relative;
-  display: inline;
-  padding-top: 150px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-right: 300px;
+  margin-left: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #d8843e;
+  opacity: 90%;
 }
 .articulo1 {
-  background-color: rgb(162, 185, 101);
+  
   font-family: 'Montserrat', sans-serif;
   font-size: large;
   color:antiquewhite;
@@ -126,11 +141,24 @@ nav ul li a:hover {
   display: inline-flex;
   margin-left: 250px;
   margin-right: 50px;
+  margin-top: 50px;
+  z-index: -1;
 }
 
+.articulo11 {
+  text-align: justify;
+  line-height: 40px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(162, 185, 101); 
+ }
 
 .articulo2 { 
-  background-color: rgb(162, 185, 101);
+ 
   font-family: 'Montserrat', sans-serif;
   color:antiquewhite;
   text-align: justify;
@@ -138,11 +166,21 @@ nav ul li a:hover {
   display: inline-flex;
   margin-right: 250px;
   margin-left: 250px;
-  margin-top: 50px;
+}
+
+.articulo22 {
+  text-align: justify;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 40px;
+  margin-left: 100px ;
+  background-color: rgb(162, 185, 101);
 }
 
 .articulo3 {
-  background-color: rgb(162, 185, 101);
+  
   font-family: 'Montserrat', sans-serif;
   font-size: large;
   color:antiquewhite;
@@ -155,33 +193,21 @@ nav ul li a:hover {
   padding-top: 80px;
 }
 
-.articulo11 {
-  text-align: justify;
-  padding: auto;
-  line-height: 40px;
-  margin-top: 80px;
-  margin-right: 100px;
-  padding-top: 50px;
-  padding-bottom: none;
-}
-
 .articulo33 {
   text-align: justify;
+  padding-right: 30px;
+  padding-left: 30px;
   padding-top: 50px;
+  padding-bottom: 50px;
   line-height: 40px;
   margin-right: 100px;
+  background-color: rgb(162, 185, 101);
+}
 
-}
-.articulo22 {
-  text-align: justify;
-  padding: auto;
-  line-height: 40px;
-  margin-top: 60px;
-  margin-left: 100px ;
-}
+
 .jere {
   margin-right: 150px;
-  margin-top: 80px;
+  margin-top: none;
   margin-left: none;
 }
 
@@ -191,11 +217,18 @@ nav ul li a:hover {
   padding-top: 200px;
   margin-left: none;
   margin-bottom: 80px;
+  
 }
 .guada {
   margin-left: 300px;
-  margin-top: 800px;
   margin-right: 150px;
+}
+
+.nombrefer , .nombreguada , .nombrejere {
+  color: antiquewhite;
+  background-color: #d8843e;
+  opacity: 90%;
+  text-align: center;
 }
 /*------------------------- FOOTER -----------------------------*/
 
