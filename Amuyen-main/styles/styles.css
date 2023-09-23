@@ -659,3 +659,89 @@ h4 {
     transition: width 0.3s, height 0.3s;
   }
 }
+
+/* Estilos CSS MLM*/
+
+.p-frecuentes {
+  background-color: rgb(162, 185, 101);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  width: auto;
+  position:relative;
+  
+}
+
+.p-frase {
+  background-color: rgb(162, 185, 101);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  width: auto;
+  position:relative;
+  
+}
+
+
+.sec-preguntas {
+  margin-top: 50px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: white;
+  opacity: 90%;
+}
+
+
+.galeria_preguntas {
+  display: flex;
+  width: auto;
+}
+
+.galeria_preguntas img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.receta-semana {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.ultimas-recetas {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.newsletter {
+  background-color: #d0d0d0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.p-recetas {
+background-color: rgb(162, 185, 101);
+font-family: 'Montserrat', sans-serif;
+font-size: 50px;
+color: white;
+text-align: center;
+width: auto;
+position:relative;
+
+}
+
+/* Estilos CSS MLM*/
+
