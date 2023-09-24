@@ -1,101 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-/*--------------------------- TEMPLATE AREAS --------------------------*/
-
-.temp-header {
-  grid-area: header;
-}
-.temp-nav {
-  grid-area: nav;
-}
-
-.temp-footer {
-  grid-area: footer;
-}
-
-/*------------------------- GENERAL CONTAINER ------------------*/
-
-.general-container {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas:
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer";
-}
-
-/*------------------------- HEADER -----------------------------*/
-
-header {
-  background-color: #d8843e;
-}
-
-.d-header {
-  display: flex;
-  justify-content: center;
-  background-color: #d8843e;
-
-}
-
-.logo {
-  width: 200px;
-  border-radius: 50%;
-}
-
-/*------------------------- NAV -----------------------------*/
-
-nav {
-  background-color: #d8843e;
-  text-align: center;
-}
-
-.ul-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  list-style-type: none;
-}
-
-nav ul li a {
-  padding-right: 15px;
-  padding-left: 15px;
-  text-decoration: none;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  margin-right: 10px;
-}
-
-nav ul li a:hover {
-  text-decoration-line: underline;
-  text-decoration-thickness: 2px;
-}
-
 body {
   height: 500px;
   background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fbodytech.com.co%2Fblog%2Fnutricion%2Ffrutos-secos-tu-mejor-opcion-914%2F&psig=AOvVaw1HblbV1DebllyJXpAOtCWS&ust=1695409218879000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCID-1dSxvIEDFQAAAAAdAAAAABAc);
-  background-repeat:no-repeat;
-  background-position-x:center;
-  background-position-y:center;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
   background-size: 10rem;
   z-index: 50;
 }
@@ -109,13 +17,13 @@ body {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.discurso-central{
+.discurso-central {
   font-family: 'Montserrat', sans-serif;
   font-size: large;
   text-align: justify;
   width: auto;
   padding-top: 50px;
-  }
+}
 
 .titulo {
   font-family: 'Montserrat', sans-serif;
@@ -131,11 +39,12 @@ body {
   background-color: #d8843e;
   opacity: 90%;
 }
+
 .articulo1 {
-  
+
   font-family: 'Montserrat', sans-serif;
   font-size: large;
-  color:antiquewhite;
+  color: antiquewhite;
   text-align: justify;
   width: auto;
   display: inline-flex;
@@ -154,13 +63,13 @@ body {
   padding-left: 30px;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: rgb(162, 185, 101); 
- }
+  background-color: rgb(162, 185, 101);
+}
 
-.articulo2 { 
- 
+.articulo2 {
+
   font-family: 'Montserrat', sans-serif;
-  color:antiquewhite;
+  color: antiquewhite;
   text-align: justify;
   width: auto;
   display: inline-flex;
@@ -175,15 +84,15 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   line-height: 40px;
-  margin-left: 100px ;
+  margin-left: 100px;
   background-color: rgb(162, 185, 101);
 }
 
 .articulo3 {
-  
+
   font-family: 'Montserrat', sans-serif;
   font-size: large;
-  color:antiquewhite;
+  color: antiquewhite;
   text-align: justify;
   width: auto;
   display: inline-flex;
@@ -217,64 +126,23 @@ body {
   padding-top: 200px;
   margin-left: none;
   margin-bottom: 80px;
-  
+
 }
+
 .guada {
   margin-left: 300px;
   margin-right: 150px;
 }
 
-.nombrefer , .nombreguada , .nombrejere {
+.nombrefer,
+.nombreguada,
+.nombrejere {
   color: antiquewhite;
   background-color: #d8843e;
   opacity: 90%;
   text-align: center;
 }
-/*------------------------- FOOTER -----------------------------*/
 
-footer {
-  color: white;
-  background-color: #d8843e;
-  opacity: 100%;
-  height: 250px;
-  padding: 20px;
-}
-
-h4 {
-  margin-bottom: 15px;
-}
-
-.elementos-footer {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-family: "Montserrat", sans-serif;
-  padding-top: 30px;
-  color: white;
-}
-
-.navegacion {
-  list-style: none;
-}
-
-.navegacion a {
-  text-decoration: none;
-  color: white;
-}
-
-.info-footer {
-  text-align: center;
-}
-
-.contact {
-  display: flex;
-  margin-top: 5px;
-}
-
-.redes {
-  display: flex;
-  margin-top: 5px;
-}
 
 /* -------------------------- MEDIA QUERIES ------------------------------------*/
 
@@ -348,7 +216,8 @@ h4 {
     overflow: hidden;
     width: 150px;
     height: 150px;
-    transition: width 0.3s, height 0.3s; /* Agregar una transición suave */
+    transition: width 0.3s, height 0.3s;
+    /* Agregar una transición suave */
   }
 }
 
@@ -377,10 +246,13 @@ h4 {
   }
 
   .image-container {
-    overflow: hidden; /* Ocultar parte de la imagen que esté fuera del contenedor */
-    width: 180px; /* Ancho inicial del contenedor */
+    overflow: hidden;
+    /* Ocultar parte de la imagen que esté fuera del contenedor */
+    width: 180px;
+    /* Ancho inicial del contenedor */
     height: 180px;
-    transition: width 0.3s, height 0.3s; /* Agregar una transición suave */
+    transition: width 0.3s, height 0.3s;
+    /* Agregar una transición suave */
   }
 }
 
@@ -412,10 +284,13 @@ h4 {
   }
 
   .image-container {
-    overflow: hidden; /* Ocultar parte de la imagen que esté fuera del contenedor */
-    width: 200px; /* Ancho inicial del contenedor */
+    overflow: hidden;
+    /* Ocultar parte de la imagen que esté fuera del contenedor */
+    width: 200px;
+    /* Ancho inicial del contenedor */
     height: 200px;
-    transition: width 0.3s, height 0.3s; /* Agregar una transición suave */
+    transition: width 0.3s, height 0.3s;
+    /* Agregar una transición suave */
   }
 }
 
@@ -448,10 +323,13 @@ h4 {
   }
 
   .image-container {
-    overflow: hidden; /* Ocultar parte de la imagen que esté fuera del contenedor */
-    width: 250px; /* Ancho inicial del contenedor */
+    overflow: hidden;
+    /* Ocultar parte de la imagen que esté fuera del contenedor */
+    width: 250px;
+    /* Ancho inicial del contenedor */
     height: 250px;
-    transition: width 0.3s, height 0.3s; /* Agregar una transición suave */
+    transition: width 0.3s, height 0.3s;
+    /* Agregar una transición suave */
   }
 }
 
@@ -467,10 +345,13 @@ h4 {
   }
 
   .image-container {
-    overflow: hidden; /* Ocultar parte de la imagen que esté fuera del contenedor */
-    width: 250px; /* Ancho inicial del contenedor */
+    overflow: hidden;
+    /* Ocultar parte de la imagen que esté fuera del contenedor */
+    width: 250px;
+    /* Ancho inicial del contenedor */
     height: 250px;
-    transition: width 0.3s, height 0.3s; /* Agregar una transición suave */
+    transition: width 0.3s, height 0.3s;
+    /* Agregar una transición suave */
   }
 }
 
@@ -486,10 +367,13 @@ h4 {
   }
 
   .image-container {
-    overflow: hidden; /* Ocultar parte de la imagen que esté fuera del contenedor */
-    width: 250px; /* Ancho inicial del contenedor */
+    overflow: hidden;
+    /* Ocultar parte de la imagen que esté fuera del contenedor */
+    width: 250px;
+    /* Ancho inicial del contenedor */
     height: 250px;
-    transition: width 0.3s, height 0.3s; /* Agregar una transición suave */
+    transition: width 0.3s, height 0.3s;
+    /* Agregar una transición suave */
   }
 
   section div table {
@@ -511,10 +395,13 @@ h4 {
   }
 
   .image-container {
-    overflow: hidden; /* Ocultar parte de la imagen que esté fuera del contenedor */
-    width: 300px; /* Ancho inicial del contenedor */
+    overflow: hidden;
+    /* Ocultar parte de la imagen que esté fuera del contenedor */
+    width: 300px;
+    /* Ancho inicial del contenedor */
     height: 300px;
-    transition: width 0.3s, height 0.3s; /* Agregar una transición suave */
+    transition: width 0.3s, height 0.3s;
+    /* Agregar una transición suave */
   }
 
   section div table {
@@ -536,10 +423,13 @@ h4 {
   }
 
   .image-container {
-    overflow: hidden; /* Ocultar parte de la imagen que esté fuera del contenedor */
-    width: 300px; /* Ancho inicial del contenedor */
+    overflow: hidden;
+    /* Ocultar parte de la imagen que esté fuera del contenedor */
+    width: 300px;
+    /* Ancho inicial del contenedor */
     height: 300px;
-    transition: width 0.3s, height 0.3s; /* Agregar una transición suave */
+    transition: width 0.3s, height 0.3s;
+    /* Agregar una transición suave */
   }
 
   section div table {
@@ -561,10 +451,13 @@ h4 {
   }
 
   .image-container {
-    overflow: hidden; /* Ocultar parte de la imagen que esté fuera del contenedor */
-    width: 180px; /* Ancho inicial del contenedor */
+    overflow: hidden;
+    /* Ocultar parte de la imagen que esté fuera del contenedor */
+    width: 180px;
+    /* Ancho inicial del contenedor */
     height: 180px;
-    transition: width 0.3s, height 0.3s; /* Agregar una transición suave */
+    transition: width 0.3s, height 0.3s;
+    /* Agregar una transición suave */
   }
 
   section div table {
