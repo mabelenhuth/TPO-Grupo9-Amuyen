@@ -49,17 +49,17 @@
 
 .promo {
   height: 200px;
-  color: white;
-  font-size: 45px;
+  color: white; 
   background-color: #b68a75;
   font-family: "Montserrat", sans-serif;
   text-align: center;
-
   text-decoration: double;
-
+}
+.promo h2{
+  font-size: 60px;
 }
 
-#octubre {
+.promo #octubre {
   text-shadow: white 5px 5px;
   text-align: center;
   font-size: 100px;
@@ -70,6 +70,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 
 @keyframes octubre {
   from {
