@@ -7,10 +7,12 @@
 }
 
 .product-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   animation: fadeIn 1s;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .product-image img {
@@ -26,28 +28,25 @@
   font-size: 18px;
 }
 
-.btn-more,
 .btn-whatsapp {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #25d366;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 10px;
 }
 
-.btn-whatsapp {
-  background-color: #25d366;
-}
-
 .product-description {
   margin-top: 20px;
   animation: fadeIn 1s;
+  align-self: self-start;
+  margin: 20px;
 }
 
 .product-description h3 {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .product-description p {
@@ -92,35 +91,3 @@
     max-height: 380px;
   }
 }
-
-/* @media screen and (max-width: 1024px) {
-    .menu {
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: center;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .menu {
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: start;
-    }
-  
-    .menu li:nth-child(1),
-    .menu li:nth-child(4) {
-      margin-left: 20px;
-    }
-  
-    .menu li:nth-child(3),
-    .menu li:nth-child(6) {
-      margin-right: 20px;
-    }
-  }
-  
-  @media screen and (max-width: 1024px) {
-    .menu {
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: center;
-      grid-row-gap: 0;
-    }
-  }   */

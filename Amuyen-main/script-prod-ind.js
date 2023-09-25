@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
     const productName = urlParams.get("product");
 
-    const numeroWhatsApp = "+54 9 2926 46-7113"; // Número de WhatsApp
+    const numeroWhatsApp = "+5492926456331"; // Número de WhatsApp
     const productos = {
         "almendras": {
             nombre: "Almendras Enteras x 1 kg",
@@ -78,10 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    Object.keys(productos).forEach(producto => {
-        producto.whatsappLink = `https://wa.me/${numeroWhatsApp}`;
-    });
-
     const product = productos[productName];
 
     if (product) {
@@ -93,13 +89,17 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <div class="product-details">
                 <h2>${product.nombre}</h2>
+                <br><br>
                 <p>Precio: ${product.precio}</p>
-                <a href="${product.whatsappLink}" class="btn-whatsapp">Contactar por WhatsApp</a>
+                <br><br>
+                <a href="https://wa.me/${numeroWhatsApp}/?text=¡Hola+Amuyén!+Quisiera+hacer+un+pedido." class="btn-whatsapp">Contactar por WhatsApp</a>
             </div>
         </section>
 
         <section class="product-description">
+            <br><br>
             <h3>Descripción</h3>
+            <br>
             <p>${product.descripcion}</p>
         </section>
         `;

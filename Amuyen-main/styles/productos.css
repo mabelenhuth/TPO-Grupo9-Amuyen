@@ -33,10 +33,14 @@ main {
   transform: scale(1.1);
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+
 .product-details h2 {
   font-size: 18px;
   margin-top: 10px;
-  text-align: center;
 }
 
 .product-details {
@@ -49,7 +53,6 @@ main {
   background-color: white;
   color: #333;
   padding: 10px 20px;
-  text-decoration: none;
   border: 1px solid #333;
   border-radius: 5px;
   transition: background-color 0.2s, color 0.2s;
@@ -58,6 +61,13 @@ main {
 .btn-more:hover {
   background-color: green;
   color: white;
+}
+
+a + p {
+  font-weight: bold;
+  font-size: medium;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 13px;
 }
 
 @keyframes fadeIn {
@@ -97,36 +107,3 @@ main {
     max-height: 380px;
   }
 }
-
-
-/* @media screen and (max-width: 1024px) {
-    .menu {
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: center;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .menu {
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: start;
-    }
-  
-    .menu li:nth-child(1),
-    .menu li:nth-child(4) {
-      margin-left: 20px;
-    }
-  
-    .menu li:nth-child(3),
-    .menu li:nth-child(6) {
-      margin-right: 20px;
-    }
-  }
-  
-  @media screen and (max-width: 1024px) {
-    .menu {
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: center;
-      grid-row-gap: 0;
-    }
-  }   */
