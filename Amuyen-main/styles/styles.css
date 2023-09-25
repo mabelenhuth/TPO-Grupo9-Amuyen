@@ -132,6 +132,10 @@ section div table {
     font-size: 14px;
   }
 
+  .galeria {
+    display: none;
+  }
+
   .image-container {
     overflow: hidden;
     width: 250px;
@@ -266,7 +270,7 @@ section div table {
   }
 }
 
-@media (min-width: 612px) {
+@media (min-width: 630px) {
   .general-container {
     display: grid;
     grid-template: auto auto auto auto / auto;
@@ -282,12 +286,16 @@ section div table {
   }
 
   nav ul li a {
-    font-size: 14px;
-    padding: 10px;
+    font-size: 12px;
+    padding: 4px;
   }
 
   h4 {
     font-size: 16px;
+  }
+
+  .galeria {
+    display: flex;
   }
 
   .image-container {
@@ -316,6 +324,11 @@ section div table {
       "nav nav"
       "main main"
       "footer footer";
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 5px;
   }
 
   .image-container {
@@ -369,6 +382,11 @@ section div table {
       "nav nav"
       "main main"
       "footer footer";
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 10px;
   }
 
   .image-container {
@@ -533,27 +551,24 @@ section div table {
 
 .p-frecuentes {
   background-color: rgb(162, 185, 101);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 50px;
   color: white;
   text-align: center;
   width: auto;
-  position:relative;
-  
+  position: relative;
 }
 
 .p-frase {
   background-color: rgb(162, 185, 101);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 25px;
   font-style: italic;
   color: white;
   text-align: center;
   width: auto;
-  position:relative;
-  
+  position: relative;
 }
-
 
 .sec-preguntas {
   margin-top: 50px;
@@ -562,7 +577,6 @@ section div table {
   background-color: white;
   opacity: 90%;
 }
-
 
 .galeria_preguntas {
   display: flex;
@@ -602,14 +616,13 @@ body {
 }
 
 .p-recetas {
-background-color: rgb(162, 185, 101);
-font-family: 'Montserrat', sans-serif;
-font-size: 50px;
-color: white;
-text-align: center;
-width: auto;
-position:relative;
-
+  background-color: rgb(162, 185, 101);
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  width: auto;
+  position: relative;
 }
 
 /* Estilos CSS MLM*/

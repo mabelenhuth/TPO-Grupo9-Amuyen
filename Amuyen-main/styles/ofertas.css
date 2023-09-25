@@ -49,13 +49,13 @@
 
 .promo {
   height: 200px;
-  color: white; 
+  color: white;
   background-color: #b68a75;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   text-decoration: double;
 }
-.promo h2{
+.promo h2 {
   font-size: 60px;
 }
 
@@ -70,7 +70,6 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-
 
 @keyframes octubre {
   from {
@@ -221,7 +220,6 @@
 /*--------------Media Queries------------*/
 
 @media (max-width: 1250px) {
-
   .contenedor {
     display: grid;
     grid-template: auto auto auto auto auto auto auto/ auto auto;
@@ -274,7 +272,6 @@
   .my-footer {
     font-size: 14px;
   }
-
 }
 
 @media screen and (max-width: 885px) {
@@ -354,5 +351,4 @@
   .my-footer {
     font-size: 12px;
   }
-
 }

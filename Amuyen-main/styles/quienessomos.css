@@ -18,7 +18,7 @@ body {
 }
 
 .discurso-central {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: large;
   text-align: justify;
   width: auto;
@@ -26,7 +26,7 @@ body {
 }
 
 .titulo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   color: antiquewhite;
   text-align: center;
@@ -41,8 +41,7 @@ body {
 }
 
 .articulo1 {
-
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: large;
   color: antiquewhite;
   text-align: justify;
@@ -67,8 +66,7 @@ body {
 }
 
 .articulo2 {
-
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: antiquewhite;
   text-align: justify;
   width: auto;
@@ -89,8 +87,7 @@ body {
 }
 
 .articulo3 {
-
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: large;
   color: antiquewhite;
   text-align: justify;
@@ -113,7 +110,6 @@ body {
   background-color: rgb(162, 185, 101);
 }
 
-
 .jere {
   margin-right: 150px;
   margin-top: none;
@@ -126,7 +122,6 @@ body {
   padding-top: 200px;
   margin-left: none;
   margin-bottom: 80px;
-
 }
 
 .guada {
@@ -142,7 +137,6 @@ body {
   opacity: 90%;
   text-align: center;
 }
-
 
 /* -------------------------- MEDIA QUERIES ------------------------------------*/
 
