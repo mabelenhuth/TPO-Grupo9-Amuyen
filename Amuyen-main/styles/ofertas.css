@@ -46,6 +46,11 @@
 }
 
 /*----------------Main----------------*/
+.contenedor {
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+}
 
 .promo {
   height: 200px;
@@ -55,6 +60,7 @@
   text-align: center;
   text-decoration: double;
 }
+
 .promo h2 {
   font-size: 60px;
 }
@@ -155,7 +161,7 @@
 #im1 {
   margin-right: 20px;
   margin-top: 60px;
-  width: 30%;
+  max-width: 30%;
   height: auto;
   float: left;
   margin-left: 5px;
@@ -165,7 +171,7 @@
 #im2 {
   margin-right: 20px;
   margin-top: 0px;
-  width: 40%;
+  max-width: 40%;
   height: auto;
   float: right;
   margin-bottom: 20px;
@@ -219,24 +225,20 @@
 
 /*--------------Media Queries------------*/
 
-@media (max-width: 1250px) {
+@media screen and (max-width: 1250px) {
   .contenedor {
     display: grid;
-    grid-template: auto auto auto auto auto auto auto/ auto auto;
+    grid-template: auto auto auto auto / auto auto;
     grid-template-areas:
-      "header header "
-      "menu1 menu1"
+      /*"header header "
+      "menu1 menu1"*/
       "promo promo"
       "fotis1 fotis2"
       "combo combo"
-      "promo-dni promo-dni"
-      "my-footer my-footer";
+      "promo-dni promo-dni";
+    /* "footer footer";*/
   }
 
-  .menu li a {
-    padding: 10px;
-    font-size: 14px;
-  }
 
   .promo h2 {
     font-size: 50px;
@@ -274,25 +276,29 @@
   }
 }
 
+
 @media screen and (max-width: 885px) {
   .contenedor {
-    display: grid;
-    grid-template: auto auto auto auto auto auto auto / auto;
-    grid-template-areas:
-      "header"
-      "menu1"
-      "promo"
-      "fotis1"
-      "fotis2"
-      "combo"
-      "promo-dni"
-      "my-footer";
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
   }
 
-  .temp-nav li a {
-    padding: 2px;
-    font-size: 10px;
+  .contenedor {
+    display: grid;
+    grid-template: auto auto auto auto  / auto auto;
+    grid-template-areas:
+      /*"header"
+      "menu1"*/
+      "promo promo"
+      "fotis1 fotis1"
+      "fotis2 fotis2"
+      "combo combo"
+      "promo-dni promo-dni";
+    /*"footer"*/
   }
+
+
 
   .combo h3 {
     font-size: 20px;
@@ -307,7 +313,7 @@
   }
 
   .promo h2 {
-    font-size: 30px;
+    font-size: 33px;
     justify-content: center;
     padding-top: 20px;
   }
@@ -318,9 +324,41 @@
     justify-content: center;
   }
 
+  
   .fotis1,
   .fotis2 {
-    padding: 10px;
+    padding-top: 30px;
+    width: auto;
+    border-color: rgb(216, 213, 213);
+    border-style: ridge;
+    text-align: center;
+  }
+
+  .fotis1 #im1 {
+    margin-right: 20px;
+    margin-top: 60px;
+    max-width: 30%;
+    height: auto;
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 20px;
+  }
+
+  .fotis2 #im2 {
+    margin-right: 20px;
+    margin-top: 0px;
+    max-width: 40%;
+    height: auto;
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  .fotis1 #im3 {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-bottom: 30px;
+    margin-left: 10px;
   }
 
   .combo h1,
@@ -351,4 +389,7 @@
   .my-footer {
     font-size: 12px;
   }
+
+
+
 }
