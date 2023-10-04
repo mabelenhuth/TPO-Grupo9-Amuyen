@@ -276,6 +276,19 @@
   }
 }
 
+@media screen and (max-width: 965px){
+  .contenedor{
+    display: grid;
+    grid-template: auto auto auto auto auto / auto auto;
+    grid-template-areas:      
+      "promo promo"
+      "fotis1 fotis1"
+      "fotis2 fotis2"
+      "combo combo"
+      "promo-dni promo-dni";
+  }
+}
+
 
 @media screen and (max-width: 885px) {
   .contenedor {
@@ -286,7 +299,7 @@
 
   .contenedor {
     display: grid;
-    grid-template: auto auto auto auto  / auto auto;
+    grid-template: auto auto auto auto auto / auto auto;
     grid-template-areas:
       /*"header"
       "menu1"*/
