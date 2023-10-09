@@ -578,13 +578,13 @@ section div table {
 /* Estilos CSS MLM*/
 
 .p-frecuentes {
-  background-color: rgb(162, 185, 101);
+  
   font-family: "Montserrat", sans-serif;
-  font-size: 50px;
+  font-size: 25px;
   color: white;
   text-align: center;
   width: auto;
-  position: relative;
+  position: static;
 }
 
 .p-frase {
@@ -603,12 +603,13 @@ section div table {
   background-size: cover;
   background-attachment: fixed;
   background-color: white;
-  opacity: 90%;
+  position: static;
 }
 
 .galeria_preguntas {
   display: flex;
   width: auto;
+  
 }
 
 .galeria_preguntas img {
@@ -617,6 +618,7 @@ section div table {
   object-fit: cover;
   opacity: 0.8;
   transition: 0.5s ease;
+  
 }
 
 body {
