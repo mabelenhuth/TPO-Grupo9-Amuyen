@@ -160,6 +160,10 @@ section div table {
     font-size: 14px;
   }
 
+  .p-destacados {
+    font-size: 20px;
+  }
+
   .galeria {
     display: none;
   }
@@ -417,6 +421,10 @@ section div table {
     padding: 10px;
   }
 
+  .p-destacados {
+    font-size: 25px;
+  }
+
   .image-container {
     overflow: hidden;
     width: 300px;
@@ -578,7 +586,6 @@ section div table {
 /* Estilos CSS MLM*/
 
 .p-frecuentes {
-  
   font-family: "Montserrat", sans-serif;
   font-size: 25px;
   color: white;
@@ -609,7 +616,6 @@ section div table {
 .galeria_preguntas {
   display: flex;
   width: auto;
-  
 }
 
 .galeria_preguntas img {
@@ -618,7 +624,6 @@ section div table {
   object-fit: cover;
   opacity: 0.8;
   transition: 0.5s ease;
-  
 }
 
 body {
