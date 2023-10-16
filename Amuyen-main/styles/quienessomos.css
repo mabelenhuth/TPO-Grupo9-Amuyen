@@ -552,12 +552,18 @@ body {
     transition: width 0.3s, height 0.3s;
   }
   
+  
 }
 
 @media (max-width: 544px) {
   .titulo .quienes-somos {
     font-size: 1rem; /* Ajusta el tamaño de fuente según tus necesidades */
   }
+  .titulo {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
 }
 
 .titulo .quienes-somos {
