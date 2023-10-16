@@ -55,10 +55,15 @@
 .promo {
   height: 200px;
   color: white;
-  background-color: #b68a75;
+  background-color: rgb(162, 185, 101);
   font-family: "Montserrat", sans-serif;
   text-align: center;
   text-decoration: double;
+  background-image: url(../images/papel-picado.gif), url(../images/fiesta.gif);
+  background-size: 10%, 10%;
+  background-position: 5% 50%, 95% 50%;
+  background-repeat: no-repeat, no-repeat;
+
 }
 
 .promo h2 {
@@ -333,7 +338,7 @@
 
   .promo #octubre {
     animation: none;
-    font-size: 80px;
+    font-size: 500%;
     justify-content: center;
   }
 
