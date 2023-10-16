@@ -197,6 +197,7 @@ a {
     left: 0;
     list-style-type: none;
     background-color: #d8843e;
+    z-index: 1;
   }
 
   .ul-container.visible {
