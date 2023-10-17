@@ -1,3 +1,6 @@
+.general-container {
+  grid-area: general-container;
+}
 body {
   height: 500px;
   background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fbodytech.com.co%2Fblog%2Fnutricion%2Ffrutos-secos-tu-mejor-opcion-914%2F&psig=AOvVaw1HblbV1DebllyJXpAOtCWS&ust=1695409218879000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCID-1dSxvIEDFQAAAAAdAAAAABAc);
@@ -23,6 +26,7 @@ body {
   text-align: justify;
   width: auto;
   padding-top: 50px;
+  
 }
 
 .titulo {
@@ -40,95 +44,76 @@ body {
   max-width: 600px;
   height: 60px;
   margin: 15px auto;
+  grid-area: titulo;
+
+}
+.contenedor-jere {
+  display: flex;
+  padding: 10px;
+  height: 300px;
+  overflow: hidden;
+  grid-area: contenedor-jere;
+}
+.contenedor-jere div {
+  margin: 20px
+}
+.contenedor-jere img {
+  height: 250px;
 }
 
-.articulo1 {
+.contenedor-jere p {
+  background-color: rgb(162, 185, 101);
+  grid-area: articulo11;
   font-family: "Montserrat", sans-serif;
   font-size: large;
   color: antiquewhite;
   text-align: justify;
-  width: auto;
-  display: inline-flex;
-  margin-left: 250px;
-  margin-right: 50px;
-  margin-top: 50px;
-  z-index: -1;
 }
 
-.articulo11 {
-  text-align: justify;
-  line-height: 40px;
-  margin-right: 100px;
-  margin-bottom: 100px;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+.contenedor-guada {
+  display: flex;
+  padding: 10px;
+  height: 300px;
+  overflow: hidden;
+  grid-area: contenedor-guada;
+}
+.contenedor-guada div {
+  margin: 20px
+}
+.contenedor-guada img {
+  height: 250px;
+}
+
+.contenedor-guada p {
   background-color: rgb(162, 185, 101);
-}
-
-.articulo2 {
-  font-family: "Montserrat", sans-serif;
-  color: antiquewhite;
-  text-align: justify;
-  width: auto;
-  display: inline-flex;
-  margin-right: 250px;
-  margin-left: 250px;
-}
-
-.articulo22 {
-  text-align: justify;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  line-height: 40px;
-  margin-left: 100px;
-  background-color: rgb(162, 185, 101);
-}
-
-.articulo3 {
+  grid-area: articulo11;
   font-family: "Montserrat", sans-serif;
   font-size: large;
   color: antiquewhite;
   text-align: justify;
-  width: auto;
-  display: inline-flex;
-  margin-left: 250px;
-  margin-right: 200px;
-  margin-bottom: 200px;
-  padding-top: 80px;
 }
 
-.articulo33 {
-  text-align: justify;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  line-height: 40px;
-  margin-right: 100px;
+.contenedor-fer {
+  display: flex;
+  padding: 10px;
+  height: 300px;
+  overflow: hidden;
+  grid-area: contenedor-fer;
+}
+.contenedor-fer div{
+  margin: 20px
+}
+.contenedor-fer img {
+  height: 250px;
+}
+
+.contenedor-fer p {
   background-color: rgb(162, 185, 101);
-}
-
-.jere {
-  margin-right: 150px;
-  margin-top: none;
-  margin-left: none;
-}
-
-.fer {
-  margin-right: 120px;
-  margin-top: 120px;
-  padding-top: 200px;
-  margin-left: none;
-  margin-bottom: 80px;
-}
-
-.guada {
-  margin-left: 300px;
-  margin-right: 150px;
+  grid-area: articulo11;
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+  color: antiquewhite;
+  text-align: justify;
 }
 
 .nombrefer,
@@ -138,19 +123,38 @@ body {
   background-color: #d8843e;
   opacity: 90%;
   text-align: center;
+  grid-area: nombrefer, nombreguada, nombrejere;
 }
 
-/* -------------------------- MEDIA QUERIES ------------------------------------*/
+.articula1 {
+  grid-area: articulo1;
+}
 
+.articulo2 {
+  grid-area: articulo2;
+}
+
+.articulo3 {
+  grid-area: articulo3;
+}
+/* -------------------------- MEDIA QUERIES ------------------------------------*/
+/* --------------- PANTALLA MUY CHICA ---------------*/
 @media (min-width: 340px) {
   .general-container {
     display: grid;
-    grid-template: auto auto auto auto / auto;
+    grid-template: repeat(7, auto) / auto auto auto auto auto auto auto;
     grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
+    "header"
+    "nav"
+    "main"
+    "titulo"
+    "articulo1"
+    "articulo2"
+    "articulo3"
+    "contenedor-jere"
+    "contenedor-guada"
+    "contenedor-fer"
+    "footer";
   }
 
   body {
@@ -177,18 +181,41 @@ body {
     height: 250px;
     transition: width 0.3s, height 0.3s;
   }
-  
+  .contenedor-fer {
+      height: 300px;
+    }
+    
+  .contenedor-jere div p {
+    font-size: 2.0vw;
+  }
+  .contenedor-guada div p {
+    font-size: 2.0vw;
+  }
+  .contenedor-fer div p {
+    font-size: 2.0vw;
+  }
+  .contenedor-fer div img {
+    height: 200px;
+  }
+
 }
 
 @media (min-width: 414px) {
   .general-container {
     display: grid;
-    grid-template: auto auto auto auto / auto;
+    grid-template: repeat(7, auto) / auto auto auto auto auto auto auto;
     grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
+    "header"
+    "nav"
+    "main"
+    "titulo"
+    "articulo1"
+    "articulo2"
+    "articulo3"
+    "contenedor-jere"
+    "contenedor-guada"
+    "contenedor-fer"
+    "footer";
   }
 
   body {
@@ -222,12 +249,19 @@ body {
 @media (min-width: 485px) {
   .general-container {
     display: grid;
-    grid-template: auto auto auto auto / auto;
+    grid-template: repeat(7, auto) / auto auto auto auto auto auto auto;
     grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
+    "header"
+    "nav"
+    "main"
+    "titulo"
+    "articulo1"
+    "articulo2"
+    "articulo3"
+    "contenedor-jere"
+    "contenedor-guada"
+    "contenedor-fer"
+    "footer";
   }
 
   .d-first-article p {
@@ -257,12 +291,19 @@ body {
 @media (min-width: 543px) {
   .general-container {
     display: grid;
-    grid-template: auto auto auto auto / auto;
+    grid-template: repeat(7, auto) / auto auto auto auto auto auto auto;
     grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
+    "header"
+    "nav"
+    "main"
+    "titulo"
+    "articulo1"
+    "articulo2"
+    "articulo3"
+    "contenedor-jere"
+    "contenedor-guada"
+    "contenedor-fer"
+    "footer";
   }
 
   body {
@@ -296,12 +337,19 @@ body {
 @media (min-width: 612px) {
   .general-container {
     display: grid;
-    grid-template: auto auto auto auto / auto;
+    grid-template: rrepeat(7, auto) / auto auto auto auto auto auto auto;
     grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
+    "header"
+    "nav"
+    "main"
+    "titulo"
+    "articulo1"
+    "articulo2"
+    "articulo3"
+    "contenedor-jere"
+    "contenedor-guada"
+    "contenedor-fer"
+    "footer";
   }
 
   body {
@@ -335,12 +383,19 @@ body {
 @media (min-width: 720px) {
   .general-container {
     display: grid;
-    grid-template: auto auto auto auto / auto auto;
+    grid-template: repeat(7, auto) / auto auto auto auto auto auto auto;
     grid-template-areas:
-      "header header"
-      "nav nav"
-      "main main"
-      "footer footer";
+    "header"
+    "nav"
+    "main"
+    "titulo"
+    "articulo1"
+    "articulo2"
+    "articulo3"
+    "contenedor-jere"
+    "contenedor-guada"
+    "contenedor-fer"
+    "footer";
   }
 
   .image-container {
@@ -358,12 +413,19 @@ body {
 @media (min-width: 744px) {
   .general-container {
     display: grid;
-    grid-template: auto auto auto auto / auto auto;
+    grid-template: repeat(7, auto) / auto auto auto auto auto auto auto;
     grid-template-areas:
-      "header header"
-      "nav nav"
-      "main main"
-      "footer footer";
+    "header"
+    "nav"
+    "main"
+    "titulo"
+    "articulo1"
+    "articulo2"
+    "articulo3"
+    "contenedor-jere"
+    "contenedor-guada"
+    "contenedor-fer"
+    "footer";
   }
 
   .image-container {
@@ -386,12 +448,19 @@ body {
 @media (min-width: 885px) {
   .general-container {
     display: grid;
-    grid-template: auto auto auto auto / auto auto;
+    grid-template: repeat(7, auto) / auto auto auto auto auto auto auto;
     grid-template-areas:
-      "header header"
-      "nav nav"
-      "main main"
-      "footer footer";
+    "header"
+    "nav"
+    "main"
+    "titulo"
+    "articulo1"
+    "articulo2"
+    "articulo3"
+    "contenedor-jere"
+    "contenedor-guada"
+    "contenedor-fer"
+    "footer";
   }
 
   .image-container {
@@ -410,16 +479,24 @@ body {
     margin-right: 30px;
   }
 }
+/* --------------- PANTALLA MUY GRANDE ---------------*/
 
 @media (min-width: 965px) {
   .general-container {
     display: grid;
-    grid-template: auto auto auto auto / auto auto;
+    grid-template: repeat(7, auto) / auto auto auto auto auto auto auto;
     grid-template-areas:
-      "header header"
-      "nav nav"
-      "main main"
-      "footer footer";
+    "header"
+    "nav"
+    "main"
+    "titulo"
+    "articulo1"
+    "articulo2"
+    "articulo3"
+    "contenedor-jere"
+    "contenedor-guada"
+    "contenedor-fer"
+    "footer";
   }
 
   .image-container {
@@ -442,12 +519,19 @@ body {
 @media screen and (min-width: 1000px) {
   .general-container {
     display: grid;
-    grid-template: auto auto auto auto / auto auto;
+    grid-template: repeat(7, auto) / auto auto auto auto auto auto auto;
     grid-template-areas:
-      "header header"
-      "nav nav"
-      "main main"
-      "footer footer";
+    "header"
+    "nav"
+    "main"
+    "titulo"
+    "articulo1"
+    "articulo2"
+    "articulo3"
+    "contenedor-jere"
+    "contenedor-guada"
+    "contenedor-fer"
+    "footer";
   }
 
   .image-container {
@@ -458,6 +542,39 @@ body {
     height: 180px;
     transition: width 0.3s, height 0.3s;
     /* Agregar una transición suave */
+  }
+
+  section div table {
+    background-color: rgb(98, 97, 97);
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .general-container {
+    display: grid;
+    grid-template: repeat(8, auto) / auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "titulo"
+      "titulo"
+      "articulo1"
+      "articulo2"
+      "articulo3"
+      "contenedor-jere"
+      "contenedor-guada"
+      "contenedor-fer"
+      "footer";
+  }
+
+  .image-container {
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    transition: width 0.3s, height 0.3s;
   }
 
   section div table {
@@ -503,11 +620,6 @@ body {
       "footer footer footer";
   }
 
-  .d-first-article p {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
-
   .image-container {
     overflow: hidden;
     width: 200px;
@@ -515,6 +627,7 @@ body {
     transition: width 0.3s, height 0.3s;
   }
 }
+
 
 @media screen and (min-width: 1250px) {
   .general-container {
@@ -525,11 +638,6 @@ body {
       "nav nav nav"
       "main main main"
       "footer footer footer";
-  }
-
-  .d-first-article p {
-    padding-right: 25px;
-    padding-left: 25px;
   }
 
   body {
@@ -551,8 +659,18 @@ body {
     height: 250px;
     transition: width 0.3s, height 0.3s;
   }
-  
-  
+}
+
+@media (min-width: 1250px) {
+  .contenedor-jere div p {
+    font-size: 2.0vw;
+  }
+  .contenedor-guada div p {
+    font-size: 2.0vw;
+  }
+  .contenedor-fer div p {
+    font-size: 2.0vw;
+  }
 }
 
 @media (max-width: 544px) {
@@ -571,32 +689,4 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
   color: antiquewhite;
-}
-
-/*para ajustar las columnas*/
-
-/* Agregar estos estilos para el comportamiento deseado en pantallas pequeñas */
-@media (max-width: 768px) {
-  .articulo1,
-  .articulo2,
-  .articulo3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .articulo1 .articulo11,
-  .articulo2 .articulo22,
-  .articulo3 .articulo33 {
-    margin: 20px;
-  }
-
-  .articulo1 .jere,
-  .articulo2 .nombreguada,
-  .articulo3 .nombrefer {
-    margin: 20px;
-  }
 }
