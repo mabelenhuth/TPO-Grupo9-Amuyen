@@ -114,7 +114,7 @@ h4 {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: white;
 }
 
 .elementos-footer {
@@ -153,7 +153,12 @@ a {
   display: flex;
   margin-top: 5px;
 }
-
+#admin a{
+  color: white;
+  text-align: right;
+  font-size: 35px;
+  margin: 30px 60px;
+}
 /* -------------------------- MEDIA QUERIES ------------------------------------*/
 
 @media (min-width: 340px) {
