@@ -78,14 +78,6 @@ class Cliente:
         return self.cursor.fetchone()
 
     #----------------------------------------------------------------
-    def modificar_cliente(self, id, nombre, apellido, comentario):
-        sql = "UPDATE clientes SET nombre = %s, apellido = %s, comentario = %s, imagen_url = %s WHERE id = %s"
-        valores = (nombre, apellido, comentario, id)
-        self.cursor.execute(sql, valores)
-        self.conn.commit()
-        return self.cursor.rowcount > 0
-
-    #----------------------------------------------------------------
     def listar_clientes(self):
         self.cursor.execute("SELECT * FROM clientes")
         clientes = self.cursor.fetchall()
