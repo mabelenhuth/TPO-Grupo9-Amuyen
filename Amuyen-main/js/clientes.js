@@ -5,7 +5,11 @@ const ul = document.createElement("ul");
 const p = document.createElement("p");
 
 fetch(API_URL_LOCAL)
-  .then((response) => response.json())
+  .then(response => {
+    console.log(response);
+    return response.json();
+  })
+
   .then((customers) => {
     customers.forEach((customer) => {
       let div = document.createElement("div");

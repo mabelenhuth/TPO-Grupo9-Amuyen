@@ -134,15 +134,6 @@ section div table {
   margin: 5px;
 }
 
-.link-comentario {
-  padding-left: 10px;
-  font-family: "Montserrat", sans-serif;
-}
-
-.link-comentario:hover {
-  font-weight: 900;
-}
-
 /* -------------------------- MEDIA QUERIES ------------------------------------*/
 
 @media (min-width: 340px) {

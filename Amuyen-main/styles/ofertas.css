@@ -59,7 +59,7 @@
   font-family: "Montserrat", sans-serif;
   text-align: center;
   text-decoration: double;
-  background-image: url(../images/papel-picado.gif), url(../images/fiesta.gif);
+  background-image: url(../images/pelota-de-navidad.png), url(../images/estrella-de-navidad.png);
   background-size: 10%, 10%;
   background-position: 5% 50%, 95% 50%;
   background-repeat: no-repeat, no-repeat;
@@ -100,6 +100,7 @@
   text-align: center;
   height: 400px;
   justify-content: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .combo h1,
@@ -130,6 +131,7 @@
   border-color: rgb(216, 213, 213);
   border-style: ridge;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .fotis1 {
@@ -204,6 +206,7 @@
   padding: 30px;
   background-color: #b68a75;
   border: 5px ridge rgb(216, 213, 213);
+  font-family: "Montserrat", sans-serif;
 }
 
 .promodni p {
@@ -338,7 +341,7 @@
 
   .promo #octubre {
     animation: none;
-    font-size: 500%;
+    font-size: 400%;
     justify-content: center;
   }
 
