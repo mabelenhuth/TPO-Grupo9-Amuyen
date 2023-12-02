@@ -6,6 +6,7 @@ const app = Vue.createApp({
             nombre: '',
             stock: '',
             precio: '',
+            descripcion: '',
             imagen_url: '',
         };
     },
@@ -39,6 +40,7 @@ const app = Vue.createApp({
                     this.nombre = data.nombre;
                     this.stock = data.stock;
                     this.precio = data.precio;
+                    this.descripcion = data.descripcion;
                     this.imagen_url = data.imagen_url;
                     if (!data.nombre) {
                         this.limpiarFormulario();
@@ -70,6 +72,7 @@ const app = Vue.createApp({
             this.nombre = '';
             this.stock = '';
             this.precio = '';
+            this.descripcion = '';
             this.imagen_url = '';
         }
     }

@@ -18,12 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const productHTML='<section class="product-grid"> <div class="product-image">'
         +'<img src=/static/imagenes/'+ prod.imagen_url + ' alt="Imagen del producto" ></div>'
         +'<div class="product-details">'
-        +'<h2>'+ prod.nombre+'</h2>'        
-        +'<br><br>'
-        +'<p>Precio: $'+prod.precio+'</p>'
-        +'<br><br>'
+        +'<h2>'+ prod.nombre+'</h2><br><br>'        
+        +'<p>Precio: $'+prod.precio+'</p><br><br>'
         +'<a href="https://wa.me/'+numeroWhatsApp+'?text=¡Hola+Amuyén!+Quisiera+hacer+un+pedido." class="btn-whatsapp">Contactar por WhatsApp</a>'
-        +'</div></section>';
+        +'</div></section>'
+        +'<section class="product-description"<br><br>'
+        +'<h3>Descripción</h3><br>'
+        +'<p>' + prod.descripcion + '</p></section>';
         productInfo.innerHTML = productHTML;
     } else {
         // Si el producto no se encuentra, muestra un mensaje de error

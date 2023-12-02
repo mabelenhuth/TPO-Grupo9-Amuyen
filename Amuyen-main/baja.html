@@ -32,6 +32,9 @@
             <label for="precioBaja">Precio:</label>
             <input type="number" step="0.01" id="precioBaja" v-model="precio" readonly><br>
 
+            <label for="descripcionBaja">Descripción: </label>
+            <textarea id="descripcionBaja" cols="42" rows="3" v-model="descripcion" readonly></textarea><br>
+
             <img v-if="imagen_url" :src="'/static/imagenes/' + imagen_url"
                 alt="Imagen del producto" style="max-width: 200px;">
 

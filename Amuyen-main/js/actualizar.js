@@ -6,6 +6,7 @@ const app = Vue.createApp({
             nombre: '',
             stock: '',
             precio: '',
+            descripcion: '',
             imagen_url: '',
             imagenSeleccionada: '',
         };
@@ -39,6 +40,7 @@ const app = Vue.createApp({
                     this.nombre = data.nombre;
                     this.stock = data.stock;
                     this.precio = data.precio;
+                    this.descripcion = data.descripcion;
                     this.imagen_url = data.imagen_url;
                     if (!data.nombre) {
                         this.limpiarFormulario();
@@ -64,6 +66,7 @@ const app = Vue.createApp({
             formData.append('nombre', this.nombre);
             formData.append('stock', this.stock);
             formData.append('precio', this.precio);
+            formData.append('descripcion', this.descripcion)
 
             if (this.imagenSeleccionada) {
                 formData.append('imagen', this.imagenSeleccionada, this.imagenSeleccionada.name);
@@ -88,6 +91,7 @@ const app = Vue.createApp({
             this.nombre = '';
             this.stock = '';
             this.precio = '';
+            this.descripcion = '';
             this.imagen_url = '';
             this.imagenSeleccionada = null;
             this.imagenUrlTemp = null;

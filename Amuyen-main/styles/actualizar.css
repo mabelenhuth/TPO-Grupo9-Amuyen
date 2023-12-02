@@ -9,6 +9,12 @@ font-family: Arial, Helvetica, sans-serif;
 
 
 }
+
+#app textarea {
+    width: 300px;
+    background-color: whitesmoke;
+}
+
 #app input{
 width: 300px;
 height: 20px;

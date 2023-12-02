@@ -36,6 +36,7 @@ class Producto:
             nombre VARCHAR(30) NOT NULL, 
             precio DECIMAL(10, 2) NOT NULL, 
             stock INT(11) NOT NULL, 
+            descripcion VARCHAR(250) DEFAULT NULL,                 
             imagen_url VARCHAR(250) DEFAULT NULL
         )''')
         self.conn.commit()
@@ -50,14 +51,14 @@ class Producto:
         self.cursor = self.conn.cursor(dictionary=True)
 
 
-    def cargar_producto(self, codigo, nombre, precio, stock, imagen):
+    def cargar_producto(self, codigo, nombre, precio, stock, descripcion, imagen):
         self.cursor.execute(f"SELECT * FROM productos WHERE codigo = {codigo}")
         prod_existente = self.cursor.fetchone()
         if prod_existente:
             return False
 
-        sql = "INSERT INTO productos(codigo, nombre, precio, stock, imagen_url) VALUES (%s, %s, %s, %s, %s)"
-        valores = (codigo, nombre, precio, stock, imagen) if imagen else (codigo, nombre, precio, stock, None)
+        sql = "INSERT INTO productos(codigo, nombre, precio, stock, descripcion, imagen_url) VALUES (%s, %s, %s, %s, %s, %s)"
+        valores = (codigo, nombre, precio, stock, descripcion, imagen) if imagen else (codigo, nombre, precio, stock, descripcion, None)
 
         self.cursor.execute(sql, valores)
         self.conn.commit()
@@ -77,9 +78,9 @@ class Producto:
         self.conn.commit()
         return self.cursor.rowcount > 0
 
-    def modificar_producto(self, codigo, nombre, precio, stock, imagen ):
-        sql = "UPDATE productos SET nombre = %s, precio=%s, stock=%s, imagen_url=%s WHERE codigo=%s"
-        valores = (nombre, precio, stock, imagen, codigo)
+    def modificar_producto(self, codigo, nombre, precio, stock, descripcion, imagen ):
+        sql = "UPDATE productos SET nombre = %s, precio=%s, stock=%s, descripcion=%s, imagen_url=%s WHERE codigo=%s"
+        valores = (nombre, precio, stock, descripcion, imagen, codigo)
         self.cursor.execute(sql, valores)
         self.conn.commit()
         return self.cursor.rowcount > 0
@@ -149,6 +150,7 @@ def cargar_producto():
     nombre = request.form['nombre']
     precio = request.form['precio']
     stock = request.form['stock']
+    descripcion = request.form['descripcion']
     imagen = request.files['imagen'] if 'imagen' in request.files else None
         
     prod = producto.buscar_producto_por_codigo(codigo)
@@ -157,7 +159,7 @@ def cargar_producto():
         nombre_base, extension = os.path.splitext(nombre_img) if nombre_img else (None, None)
         nombre_img = f"{nombre_base}_{int(time.time())}{extension}" if nombre_img else None        
 
-        if producto.cargar_producto(codigo, nombre, precio, stock, nombre_img):  
+        if producto.cargar_producto(codigo, nombre, precio, stock, descripcion, nombre_img):  
             if imagen:
                 imagen.save(os.path.join(ruta_img, nombre_img))          
             return jsonify({"mensaje": "Producto agregado"}), 201
@@ -180,6 +182,7 @@ def modificar_producto(codigo):
     nombre = data.get("nombre")
     precio = data.get("precio")
     stock = data.get("stock")
+    descripcion = data.get("descripcion")
 
     prod = producto.buscar_producto_por_codigo(codigo)
     if prod:    
@@ -192,7 +195,7 @@ def modificar_producto(codigo):
             nombre_img = prod["imagen_url"]
     
 
-    if producto.modificar_producto(codigo, nombre, precio, stock, nombre_img):
+    if producto.modificar_producto(codigo, nombre, precio, stock, descripcion, nombre_img):
         return jsonify({"mensaje": "Producto actualizado"}), 200
     else:
         return jsonify({"mensaje": "Producto inexistente"}), 404
