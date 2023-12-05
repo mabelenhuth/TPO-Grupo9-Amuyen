@@ -39,6 +39,10 @@ button{
     margin: 5px;  
     font-family: Arial, Helvetica, sans-serif;  
 }
+button:hover{
+    background-color:  rgb(115, 130, 85);
+    color:whitesmoke;
+}
 form a{
     color:white;
     margin: 5px 80px;

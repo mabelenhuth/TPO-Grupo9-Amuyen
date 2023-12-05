@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 + '<button id="btnCarga"><h1>Carga de productos</h1></button>'
                 + '<button id="btnActualizar"><h1> Actualización de productos</h1></button>'
                 + '<button id="btnBaja"><h1>Baja de productos</h1></button></div>';
+                
 
             acceso.innerHTML = accesoBotones;
             popup.innerHTML = '';

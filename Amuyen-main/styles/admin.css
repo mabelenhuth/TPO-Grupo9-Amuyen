@@ -48,6 +48,12 @@ main {
 #enviar {
     font-size: 15px;
     background-color: rgb(162, 185, 101);
+    padding: 5px;
+    border-radius: 5px;
+}
+#enviar:hover{
+    background-color:  rgb(115, 130, 85);
+    color:whitesmoke; 
 }
 
 .botones button {
@@ -56,7 +62,10 @@ main {
     height: 80px;
     background-color: rgb(162, 185, 101);
     border-radius: 5px;
-
+}
+.botones button:hover{   
+    background-color:  rgb(115, 130, 85);
+    color:whitesmoke;
 }
 
 .botones {
